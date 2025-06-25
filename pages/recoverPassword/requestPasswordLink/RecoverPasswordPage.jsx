@@ -1,3 +1,5 @@
+'use client';
+
 import ForgotPasswordForm from "@/pages/recoverPassword/requestPasswordLink/components/ForgotPasswordForm";
 
 export default function RecoverPasswordPage() {

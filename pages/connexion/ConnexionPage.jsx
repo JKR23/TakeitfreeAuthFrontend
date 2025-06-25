@@ -1,3 +1,5 @@
+'use client';
+
 import LoginForm from "@/pages/connexion/components/LoginForm";
 
 export default function ConnexionPage() {

@@ -1,3 +1,5 @@
+'use client';
+
 import RegisterForm from "@/pages/signin/components/RegisterForm";
 
 export default function SigninPage() {

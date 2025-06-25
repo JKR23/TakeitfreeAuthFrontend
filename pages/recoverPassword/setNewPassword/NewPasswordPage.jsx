@@ -1,3 +1,5 @@
+'use client';
+
 import NewPasswordForm from "@/pages/recoverPassword/setNewPassword/components/NewPasswordForm";
 
 export default function NewPasswordPage() {
