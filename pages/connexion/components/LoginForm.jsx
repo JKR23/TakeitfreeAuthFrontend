@@ -20,7 +20,7 @@ export default function LoginForm() {
     setSuccessMessage("");
 
     try {
-      const response = await fetch("http://localhost:8081/auth/login", {
+      const response = await fetch("https://takeitfree-auth-h2ajdneuhdfadxc7.eastus-01.azurewebsites.net/auth/login", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
@@ -36,7 +36,7 @@ export default function LoginForm() {
 
       const result = await response.json();
       if (result.token) {
-        const redirectUrl = `http://localhost:3000/?token=${encodeURIComponent(result.token)}`;
+        const redirectUrl = `https://take-it-free-item-management-fronte.vercel.app/?token=${encodeURIComponent(result.token)}`;
         window.location.href = redirectUrl;
       } else {
         setServerError("Aucun token reçu.");

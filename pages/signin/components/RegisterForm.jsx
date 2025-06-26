@@ -19,7 +19,7 @@ export default function RegisterForm() {
     try {
       console.log("Inscription avec :", data);
   
-      const response = await fetch("http://localhost:8081/auth/signup", {
+      const response = await fetch("https://takeitfree-auth-h2ajdneuhdfadxc7.eastus-01.azurewebsites.net/auth/signup", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
