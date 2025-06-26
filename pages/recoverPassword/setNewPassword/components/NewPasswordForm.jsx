@@ -28,7 +28,7 @@ export default function NewPasswordForm() {
             }
 
             try {
-                const res = await fetch(`http://localhost:8081/password-reset/validate-token?token=${token}`);
+                const res = await fetch(`https://takeitfree-auth-h2ajdneuhdfadxc7.eastus-01.azurewebsites.net/password-reset/validate-token?token=${token}`);
                 if (!res.ok) {
                     setMessage('❌ Ce lien est invalide ou a expiré.');
                     setIsTokenValid(false);
