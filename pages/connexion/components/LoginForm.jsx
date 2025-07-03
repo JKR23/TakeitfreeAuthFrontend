@@ -20,7 +20,7 @@ export default function LoginForm() {
     setSuccessMessage("");
 
     try {
-      const response = await fetch("https://takeitfree-auth-h2ajdneuhdfadxc7.eastus-01.azurewebsites.net/auth/login", {
+      const response = await fetch("https://takeitfreeauthbackend-83rr.onrender.com/auth/login", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
