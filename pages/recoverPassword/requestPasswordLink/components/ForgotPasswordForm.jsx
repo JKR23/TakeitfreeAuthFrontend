@@ -22,7 +22,7 @@ export default function ForgotPasswordForm() {
     setSuccessMessage('');
 
     try {
-      const response = await fetch('https://takeitfree-auth-h2ajdneuhdfadxc7.eastus-01.azurewebsites.net/password-reset/obtain-resetLink', {
+      const response = await fetch('https://takeitfreeauthbackend-83rr.onrender.com/password-reset/obtain-resetLink', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
