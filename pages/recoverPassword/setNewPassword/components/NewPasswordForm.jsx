@@ -28,7 +28,7 @@ export default function NewPasswordForm() {
             }
 
             try {
-                const res = await fetch(`https://takeitfree-auth-h2ajdneuhdfadxc7.eastus-01.azurewebsites.net/password-reset/validate-token?token=${token}`);
+                const res = await fetch(`https://takeitfreeauthbackend-83rr.onrender.com/password-reset/validate-token?token=${token}`);
                 if (!res.ok) {
                     setMessage('❌ Ce lien est invalide ou a expiré.');
                     setIsTokenValid(false);
@@ -52,7 +52,7 @@ export default function NewPasswordForm() {
         }
 
         try {
-            const response = await fetch('http://localhost:8081/password-reset/set-new-password', {
+            const response = await fetch('https://takeitfreeauthbackend-83rr.onrender.com/password-reset/set-new-password', {
                 method: 'PUT',
                 headers: {
                     'Content-Type': 'application/json',
@@ -70,7 +70,7 @@ export default function NewPasswordForm() {
             reset();
 
             setTimeout(() => {
-                window.location.href = 'http://localhost:3001/';
+                window.location.href = 'https://takeitfree-auth-frontend.vercel.app/';
             }, 2000);
         } catch (error) {
             console.error(error);
@@ -125,7 +125,7 @@ export default function NewPasswordForm() {
                         Ce lien de réinitialisation n’est plus valide. Veuillez en demander un nouveau.
                     </p>
                     <button
-                        onClick={() => window.location.href = 'http://localhost:3001/recover_password'}
+                        onClick={() => window.location.href = 'https://takeitfree-auth-frontend.vercel.app/recover_password'}
                         className="mt-4 px-4 py-2 bg-green-500 cursor-pointer text-black font-semibold rounded hover:bg-yellow-600 transition"
                     >Demander un nouveau lien
                     </button>
