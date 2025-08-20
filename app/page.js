@@ -1,4 +1,4 @@
-import Connexion from '@/app/connexion/page'
+import Connexion from '@/app/connexion/page';
 
 export default function Home() {
     return (
