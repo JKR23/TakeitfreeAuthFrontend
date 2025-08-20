@@ -3,28 +3,30 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-      "dev": "next dev --turbopack -p 3001",
-      "build": "next build",
-      "start": "next start",
-      "lint": "next lint",
-      "format": "prettier --write ."
+    "dev": "next dev --turbopack -p 3001",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint",
+    "format": "prettier --write ."
   },
   "dependencies": {
-      "@emailjs/browser": "^4.4.1",
-      "@react-google-maps/api": "^2.20.6",
-      "lucide-react": "^0.513.0",
-      "next": "15.3.3",
-      "react": "^19.0.0",
-      "react-dom": "^19.0.0",
-      "react-hook-form": "^7.57.0"
+    "@emailjs/browser": "^4.4.1",
+    "@react-google-maps/api": "^2.20.6",
+    "lucide-react": "^0.513.0",
+    "next": "15.3.3",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0",
+    "react-hook-form": "^7.57.0",
+    "sockjs-client": "^1.6.1",
+    "stompjs": "^2.3.3"
   },
   "devDependencies": {
-      "@eslint/eslintrc": "^3",
-      "@tailwindcss/postcss": "^4",
-      "@trivago/prettier-plugin-sort-imports": "^5.2.2",
-      "eslint": "^9",
-      "eslint-config-next": "15.3.3",
-      "prettier": "^3.5.3",
-      "tailwindcss": "^4"
+    "@eslint/eslintrc": "^3",
+    "@tailwindcss/postcss": "^4",
+    "@trivago/prettier-plugin-sort-imports": "^5.2.2",
+    "eslint": "^9",
+    "eslint-config-next": "15.3.3",
+    "prettier": "^3.5.3",
+    "tailwindcss": "^4"
   }
 }

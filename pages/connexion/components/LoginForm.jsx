@@ -35,7 +35,7 @@ export default function LoginForm() {
       }
 
       const result = await response.json();
-      if (result.token) {
+      if (result.token) { //dirige vers page d'accueil de takeItFree avec token pour identifier le user
         const redirectUrl = `https://take-it-free-item-management-fronte.vercel.app/?token=${encodeURIComponent(result.token)}`;
         window.location.href = redirectUrl;
       } else {
