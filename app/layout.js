@@ -1,6 +1,6 @@
 import { Geist, Geist_Mono } from 'next/font/google';
 
-import NotificationListener from '@/components/NotificationListener';
+import NotificationListener from '@/pages/NotificationListener';
 
 import './globals.css';
 
