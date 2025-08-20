@@ -3,8 +3,6 @@
 // obligatoire car ça utilise useEffect et WebSocket côté client
 import { useEffect } from 'react';
 
-import NotificationListener from "@/pages/NotificationListener";
-
 export default function NotificationListener() {
     useEffect(() => {
         const socket = new WebSocket('wss://takeitfreeauthbackend-83rr.onrender.com/ws');
